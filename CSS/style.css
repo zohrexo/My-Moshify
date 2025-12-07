@@ -5,6 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -48,6 +49,7 @@ p {
     font-size: 2.4rem;
   }
 }
+
 /* Links */
 a {
   text-decoration: none;
@@ -71,6 +73,7 @@ a {
     font-size: 1.5rem;
   }
 }
+
 /* Lists */
 .list {
   list-style: none;
@@ -91,5 +94,32 @@ a {
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
+  }
+}
+
+/* badges */
+.badge {
+  border-radius: 20px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+}
+.badge--secondary {
+  background-color: var(--color-secondary);
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .bafge--small {
+    font-size: 1.2rem;
   }
 }
