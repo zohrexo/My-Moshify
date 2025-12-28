@@ -232,6 +232,8 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  /* position: relative; */
+  /* margin: 50px; */
 }
 .card__header,
 .card__body {
@@ -282,8 +284,31 @@ a {
   letter-spacing: 1px;
   font-weight: 500;
 }
+/* .plan--popular {
+  .plan__name::before {
+    content: url(../images/popular.svg);
+    display: block;
+    width: 30px;
+    z-index: 20;
+    position: absolute;
+    top: -4px;
+    right: 20px;
+  }
 
-@media screen and (min-width: 1024px) {
+} */
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  width: 40px;
+  z-index: 20;
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+*/ @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }
