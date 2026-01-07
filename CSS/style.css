@@ -182,6 +182,10 @@ a {
   color: var(--color-headings);
   border: 2px solid var(--color-headings);
 }
+.button--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .button--outline:hover {
   background: var(--color-headings);
   color: #fff;
@@ -427,5 +431,39 @@ a {
   .testimonial .quote {
     margin-right: 0;
     margin-left: 6rem;
+  }
+}
+/* Callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__content {
+  text-align: center;
+}
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font: 3rem;
+}
+.callout__button {
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout__button {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
   }
 }
