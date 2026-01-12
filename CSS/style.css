@@ -450,7 +450,7 @@ a {
   margin-top: 0;
   font: 3rem;
 }
-.callout__button {
+.callout .button {
   align-self: center;
   justify-self: center;
 }
@@ -459,8 +459,9 @@ a {
   .callout__content {
     text-align: left;
   }
-  .callout__button {
+  .callout .button {
     justify-self: start;
+    /* niazi nist be code bala chon grid-template-columns ro gozashtim 1fr auto */
     margin: 0 2rem;
   }
   .callout .grid--1x2 {
