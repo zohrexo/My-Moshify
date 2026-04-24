@@ -174,7 +174,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -248,8 +248,9 @@ a {
 }
 .input-group .input {
   border: 0;
-  flex-grow: 1;
   padding: 1.5rem 2rem;
+  flex-grow: 1;
+  width: 0;
 }
 .input-group .button {
   margin: 4px;
@@ -398,7 +399,7 @@ a {
   bottom: 10px;
 }
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -450,6 +451,10 @@ a {
   right: -32px;
   top: 32px;
 }
+.testimonial .quote {
+  margin: 3rem;
+  font-size: 110%;
+}
 
 @media screen and (min-width: 768px) {
   .testimonial .quote,
@@ -468,6 +473,7 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  transform: translateY(5rem);
 }
 .callout--primary {
   background: var(--color-primary);
@@ -545,7 +551,7 @@ a {
 }
 
 .block--skewed--right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block--skewed--left {
@@ -643,8 +649,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -709,6 +716,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 .footer a {
   color: #777;
