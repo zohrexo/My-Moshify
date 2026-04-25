@@ -1,6 +1,6 @@
 @import "./normalize.css";
 
-: root {
+:root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
@@ -136,7 +136,7 @@ a {
   .badge {
     font-size: 1.5rem;
   }
-  .bafge--small {
+  .badge--small {
     font-size: 1.2rem;
   }
 }
@@ -670,7 +670,8 @@ a {
 /* Plans Block */
 .block-plans .grid {
   gap: 8rem 4rem;
-  margin: 0 2rem; /*man ezafe kardam  */
+  /* margin: 0 2rem; */
+  /*man ezafe kardam  */
 }
 .block-plans .card {
   max-width: 500px;
